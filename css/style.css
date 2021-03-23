@@ -1,0 +1,238 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* <!------------------------------- colom-1 ---------------------------> */
+
+.colom-1 {
+  width: 70px !important;
+  /* flex-wrap: wrap; */
+}
+
+.sidebar-icon ul li {
+  list-style: none;
+  text-align: center;
+  /* position: relative; */
+}
+.sidebar-icon ul li a i {
+  color: darkgray;
+  margin: 10px 0rem;
+  height: 2rem;
+}
+.mb-20 {
+  margin-bottom: 28rem;
+}
+.active {
+  background: #3204fd;
+  color: #fff !important;
+  height: 2rem;
+  width: 2rem;
+  padding-top: 8px;
+  border-radius: 8px;
+}
+.sidebar-icon ul li a i:hover {
+  background: #3204fd;
+  color: #fff;
+  height: 2rem;
+  width: 2rem;
+  padding-top: 8px;
+  border-radius: 8px;
+}
+
+/* <!------------------------------- colom-2 ---------------------------> */
+.colom-2 {
+  background-color: #f1f3f6 !important;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  line-height: 0.9rem;
+  padding-left: 3rem !important;
+  justify-content: start;
+  height: auto;
+}
+.colom-2 p {
+  color: gray;
+}
+.profile-img {
+  height: 100px;
+  width: 110px;
+  border-radius: 50%;
+}
+.col2-btn {
+  background-color: #3204fd !important;
+  border: none !important;
+  border-radius: 7px !important;
+  height: 2.5rem;
+  max-width: 8rem;
+  margin-top: 0.6rem;
+  margin-bottom: 1.2rem;
+}
+hr {
+  max-width: 270px;
+}
+.col2-select {
+  border: none;
+  background: #3204fd !important;
+  color: #fff !important;
+  cursor: pointer;
+}
+.col2-select:focus {
+  outline: none;
+}
+
+/* <!------------------------------- colom-3 ---------------------------> */
+.colom-3 {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  line-height: 1rem;
+  padding-left: 2rem !important;
+  justify-content: start;
+}
+.col3-Fdiv{
+  display: flex;
+  justify-content: space-around;
+}
+.col-3p {
+  color: gray;
+  font-weight: 480;
+}
+.col-3-h6 {
+  color: #3204fd;
+  font-weight: bold;
+}
+.col-3hr {
+  background-color: #3204fd;
+  max-width: 145px;
+}
+.col-3-row-4 {
+  margin-top: 8px;
+  font-size: 0.8rem;
+}
+.col-3-row-4 hr {
+  max-width: 140px;
+}
+.col3-select {
+  border: none;
+  cursor: pointer;
+}
+.col3-select:focus {
+  outline: none;
+}
+
+/* ---Progress bar---- */
+
+.progressbar-col {
+  display: flex !important;
+  justify-content: space-around;
+} 
+.progressbar-col h6{
+  margin-left: 2.5rem;
+  margin-top: 1rem;
+}
+
+
+/* <!------------------------------- colom-4 ---------------------------> */
+.colom-4 {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: start;
+}
+
+.col4-row1 {
+  line-height: 1rem !important;
+  background-color: #f1f3f6;
+  margin-top: 6rem;
+  height: 55vh;
+  border-radius: 9px;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+#slider {
+  width: 198.6px;
+}
+#slider::-webkit-slider-thumb {
+  cursor: pointer;
+}
+#slider1 {
+  width: 200px;
+}
+#slider1::-webkit-slider-thumb {
+  cursor: pointer;
+}
+.col4-row1 hr {
+  width: 250px;
+}
+.col4-row1 a {
+  padding-left: 3.5rem;
+}
+.col4-btn {
+  background-color: #3204fd !important;
+  border: none !important;
+  border-radius: 9px !important;
+  height: 2.5rem;
+  width: 14rem;
+}
+.col-4-btn:focus {
+  outline: none;
+}
+
+/* ------ */
+.col4-row2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  flex-direction: column;
+  padding-left: 2rem !important;
+  margin-top: 1.7rem;
+  border-left: 1.5px solid #3204fd;
+}
+
+/*---------------- footer icon ---------------------*/
+footer {
+  display: none !important;
+}
+.footer-icon ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  list-style: none;
+  text-align: center;
+  align-items: center;
+}
+.footer-icon ul li a i {
+  width: 2rem;
+  /* height: 2rem; */
+  color: darkgray;
+  margin: 10px 0rem;
+}
+.f-active {
+  background: #3204fd;
+  color: #fff !important;
+  height: 2rem;
+  width: 2rem;
+  border-radius: 8px;
+  padding-top: 7px;
+}
+.footer-icon ul li a i:hover {
+  background: #3204fd;
+  color: #fff;
+  height: 2rem;
+  width: 2rem;
+  /* padding-left: 6.5px;
+  padding-top: 6.5px; */
+  border-radius: 8px;
+  padding-top: 7px;
+}

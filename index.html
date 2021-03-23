@@ -1,0 +1,312 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Admin Dashboard</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,maximum-scale=1, initial-scale=1, shrink-to-fit=no">
+    <!-- link css -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/284dde0965.js" crossorigin="anonymous"></script>
+    <!-- chart js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js"></script>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- <script src="https://code.jquery.com/jquery-3.6.0.js"></script> -->
+
+</head>
+
+<body>
+    <div class="container-fluid">
+
+        <div class="row allrow">
+            <!------------------------------- colom-1 --------------------------->
+            <div class="col-md-0 col-lg-0 col-xs-12 colom-1">
+                <!-- first-row -->
+                <div class=" row sidebar-icon mt-4 d-flex flex-column">
+                    <ul>
+                        <li class="mb-2 mt-2"><a href="#"><i class="fas fa-search "></i></a> </li>
+                    </ul>
+
+                    <ul>
+                        <li><a href="#"><i class="fas fa-home active"></i></a> </li>
+                        <li><a href="#"><i class="far fa-address-card"></i></a> </li>
+                        <li><a href="#"><i class="fas fa-th-large"></i></a> </li>
+                        <li class="mb-20"><a href="#"><i class="fas fa-user"></i></a> </li>
+                    </ul>
+
+                    <ul>
+                        <li><a href="#"><i class="fas fa-bell"></i></a> </li>
+                        <li><a href="#"><i class="fas fa-sign-out-alt"></i></a> </li>
+                    </ul>
+
+                </div>
+                <!-- -->
+
+            </div>
+            <!------------------------------- colom-2 --------------------------->
+
+            <div class="col-md-3 col-lg-3 col-xs-12 colom-2">
+
+                <div class="container">
+                    <!-- first-row -->
+                    <div class=" d-flex flex-md-wrap mt-5">
+                        <img class=" profile-img" src="images/profile.jpg" alt="">
+                        <span class="ml-3 mt-3">
+                            <h3>Hi Mike,</h3>
+                            <p>Welcome back.</p>
+                        </span>
+                    </div>
+                    <!-- firstdiv -->
+                    <div class="col2-Fdiv">
+
+                        <h6 class="mt-4"> Today </h6>
+
+                        <h4> <b> $19,892 </b></h4>
+                        <p>Account Balance</p>
+
+                        <div class="col2-h5">
+                            <span>
+                                <h5><b>$4,000</b></h5>
+                                <p>Year-to-Date</p>
+                            </span>
+                            <span>
+                                <h5><b>$1,892</b></h5>
+                                <p>Total Interest</p>
+                            </span>
+                        </div>
+
+                        <button class="btn btn-primary col2-btn">
+                            <select name="bank" class="col2-select">
+                                <option value="#">I want to</option>
+                                <option value="withdraw">Withdraw</option>
+                                <option value="Deposite">Deposite</option>
+                            </select>
+                        </button>
+
+                    </div>
+                    <!-- seconddiv -->
+                    <div class="col2-Sdiv">
+
+                        <h6><b> Recent Transactions </b></h6>
+                        <p>2020-08-07</p>
+                        <h6> <b> Withdrawal Transfer to Bank-XXX11 </b></h6>
+                        <hr>
+
+                        <p>2020-07-21</p>
+                        <h6> <b> Withdrawal Transfer to Bank-XXX11 </b></h6>
+                        <hr>
+
+                        <p>2020-07-16</p>
+                        <h6> <b> Withdrawal Transfer to Bank-XXX11 </b></h6>
+                        <hr>
+
+                    </div>
+
+                </div>
+            </div>
+            <!------------------------------- colom-3 --------------------------->
+
+            <div class="colom-3 col-md-6 col-lg-6 col-xs-12 ">
+
+                <div class="container">
+
+                    <h6 class="mt-5 mb-1 col-3-h6">Retirement Income</h6>
+                    <h5><b>Starting Year 2056</b></h5>
+
+
+                    <br>
+                    <!-- first-row -->
+                    <div class="row d-flex flex-md-wrap">
+
+                        <div class=" col-md-3 col-lg-3 col-sm-12 ">
+                            <h4><b>$300,000</b></h4>
+                            <p class="col-3p">My Goal</p>
+                            <hr class="col-3hr">
+                        </div>
+
+                        <!-- first-row first-div -->
+                        <div class=" col3-Fdiv col-md-9 col-lg-9 col-sm-12">
+                            <span class="spn1">
+                                <h4><b>59%</b></h4>
+                                <p class="col-3p">Goal Achieved</p>
+                                <hr class="col-3hr">
+                            </span>
+
+                            <span class="spn2">
+                                <h4><b>$300</b></h4>
+                                <p class="col-3p">Est, Monthly Income</p>
+                                <hr class="col-3hr">
+                            </span>
+                        </div>
+
+
+                    </div>
+
+                    <h6><b>Contributions Overtime</b></h6>
+
+                    <!-- chart js bar -->
+                    <div class="row ">
+                        <canvas id="myChart" aria-label="chart" role="img"></canvas>
+                    </div>
+
+
+
+                    <h5 class="mt-4">How do I compare to my peers?</h5>
+                    <p style="color: darkgray; font-size: 13px;">These numbers represent current goal achivement</p>
+
+                    <!-- second-row -->
+                    <div class="row mt-3 d-flex flex-md-wrap">
+                        <!-- second-row first-column -->
+                        <div class="col-sm-3 col-md-3 col-lg-3 col-3-row-4">
+
+                            <p><b>Age:</b>
+                                <select name="age" class="col3-select">
+                                    <option value="Under20">Under 20</option>
+                                    <option value="Under30">Under 30</option>
+                                    <option value="Under40">Under 40</option>
+                                    <option value="Under50">Under 50</option>
+                                </select>
+                            </p>
+                            <hr>
+                            <p><b>Salary:</b>
+                                <select name="salary" class="col3-select">
+                                    <option value="k20-k30">k 20-k 30</option>
+                                    <option value="k30-k40">k 30-k 40</option>
+                                    <option value="k40-k50">k 40-k 50</option>
+                                </select>
+                            </p>
+                            <hr>
+                            <p><b>Gender:</b>
+                                <select name="gender" class="col3-select">
+                                    <option value="Male">Male</option>
+                                    <option value="Female">Female</option>
+                                    <option value="Other">Other</option>
+                                </select>
+                            </p>
+                            <hr>
+
+                        </div>
+                        <!-- second-row second-column -->
+                        <!-- Progress-bar Round -->
+                        <div class="col-sm-9 col-md-9 col-lg-9">
+                            <!-- third-row  -->
+
+                            <div class="row progressbar-col">
+
+                                <div class="round" data-value="0.78" data-size="90" data-thickness="10">
+                                    <strong></strong>
+                                    <h6 class="ml-3">Average</h6>
+                                </div>
+
+                                <div class="round" data-value="0.95" data-size="90" data-thickness="10">
+                                    <strong></strong>
+                                    <h6>Top</h6>
+                                </div>
+
+                                <div class="round" data-value="0.59" data-size="90" data-thickness="10">
+                                    <strong></strong>
+                                    <h6>Me</h6>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                </div>
+            </div>
+            <!------------------------------- colom-4 --------------------------->
+
+            <div class="colom-4 col-md-2 col-lg-2  col-sm-12 col-xs-12">
+
+                <div class="container">
+                    <!-- firstrow -->
+                    <div class="row d-flex flex-md-wrap col4-row1">
+
+                        <h5 class="pt-3">Retirement Strategy</h5>
+
+                        <h6>Employee Contribution</h6>
+                        <span>
+                            <input type="range" min="0" max="100" id="slider"> <span id="value">50%</span>
+                        </span>
+                        <h6>Retirement Age</h6>
+                        <span>
+                            <input type="range" min="0" max="80" id="slider1"> <span id="value1">40</span>
+                        </span>
+
+                        <hr>
+
+                        <h6>Employer Contribution : <span>8.4%</span> </h6>
+                        <h6>Interest Rate : <span>5%</span> </h6>
+
+                        <button class=" btn btn-primary col4-btn">Update</button>
+                        <a href="#">View Help Docs ></a>
+                    </div>
+
+                    <!-- second-row -->
+                    <div class="row col4-row2">
+
+                        <h5>Are you considering a </h5>
+                        <h6><strong>Housing Advance? </strong></h6>
+                        <p style="color: darkgray;">Limited time reduced interest.</p>
+                        <a href="#" style="color: #3204fd;">Learn More ></a>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    <!-- ----------------------footer------------------ -->
+    <footer>
+
+        <div class="container footer-icon">
+
+            <ul class="">
+
+                <li><a href="#"><i class="fas fa-home f-active"></i></a> </li>
+                <li><a href="#"><i class="far fa-address-card"></i></a> </li>
+                <li><a href="#"><i class="fas fa-th-large"></i></a> </li>
+                <li class=""><a href="#"><i class="fas fa-user"></i></a> </li>
+                <li><a href="#"><i class="fas fa-search "></i></a> </li>
+
+            </ul>
+
+        </div>
+
+    </footer>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+
+
+    <!-- jquerycdn -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-circle-progress/1.2.0/circle-progress.min.js"></script>
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
