@@ -45,7 +45,7 @@ let myChart = new Chart(ctx, {
           },
           stacked: true
       }],
-      xAxes: [{
+      xAxes: [{$
         stacked: true
       }]
   }
